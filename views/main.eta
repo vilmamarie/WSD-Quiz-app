@@ -1,0 +1,9 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1>Questions app!</h1>
+
+<p>This is an application for creating and answering questions. With this application, you can create multiple choice questions. You can also take quizzes where you can answer questions chosen randomly from all questions created on the application, even from other users. Note that as the questions are chosen randomly, you might get the same question several times in a row. You can also see statistics about your questions and answers, and of the top answerers on the app.</p>
+
+<p>If this is your first time using this application, <a href="/auth/register" >register here</a>.</p>
+
+<p>If you've been here before, go ahead and <a href="/auth/login" >login</a>!</p>

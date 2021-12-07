@@ -1,0 +1,21 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1>Statistics!</h1>
+
+<h2>Number of answers you have given:</h2>
+<p><%= it.answers_given %></p>
+
+<h2>Number of correct answers given:</h2>
+<p><%= it.correct_answers %></p>
+
+<h2>Number of answers given to your questions:</h2>
+<p><%= it.answers_received %></p>
+
+<h2>Users with the most answered questions:</h2>
+
+<table>
+<tr><th>User email</th><th>Number of answers</th></tr>
+<% it.top_five.forEach(stat => { %>
+<tr><td><%= stat.email %></td><td><%= stat.count %></td></tr>
+<% }) %>
+</table>
