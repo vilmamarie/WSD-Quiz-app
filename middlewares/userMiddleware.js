@@ -9,6 +9,6 @@ const userMiddleware = async (context, next) => {
     };
   
     await next();
-  };
+};
   
-  export { userMiddleware };
+export { userMiddleware };
