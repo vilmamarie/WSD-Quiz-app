@@ -119,6 +119,7 @@ Deno.test("Authenticated users are able to delete their own questions through PO
     testClient = await superoak(app);
     await testClient.post(`/questions/${testQuestionId}/delete`).set("Cookie", cookie).send().expect(302).expect(`Redirecting to /questions.`);
     testQuestionId = null;
+    //Deleting users once tests are done
     await testHelper.getDBready("testing@mail.com");
     await testHelper.getDBready("testing@mail-2.com");
 });

@@ -42,7 +42,7 @@ const numberOfAnswersToUser = async (user_id) => {
     return res.rows[0].count;
 };
 
-const usersWithMostAnswers = async () => { //Idk if this is right
+const usersWithMostAnswers = async () => {
     let res = await executeQuery(
         `SELECT COUNT(question_answers.id) AS count, email 
         FROM question_answers
