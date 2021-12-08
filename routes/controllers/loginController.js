@@ -2,7 +2,7 @@ import * as userService from "../../services/userService.js";
 import { bcrypt } from "../../deps.js";
 
 const login = async ({ request, response, state, render}) => {
-    const body = request.body();
+    const body = request.body({ type: "form" });
     const params = await body.value;
     const email = params.get("email");
     const password = params.get("password");
