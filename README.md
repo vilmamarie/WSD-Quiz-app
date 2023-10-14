@@ -14,16 +14,8 @@ Some additional features I added on top of what was asked in the assignment desc
     registering page with an error and the email field populated.
 
 
-The application is available online at the following address:
-    https://wsd-questions-quiz-app.herokuapp.com/questions 
-    
-    Here there are already some users and questions (some in Finnish most in English) so you 
-    can easily see that the top five statistics work and so you can try out the quiz feature
-    properly with a lot of different questions from different users.
-
-
 Running the application locally:
-1. Create a database with the following tables:
+1. Create a database with the following tables (I have been using ElephantSQL for this):
     CREATE TABLE users (
         id SERIAL PRIMARY KEY,
         email VARCHAR(255) UNIQUE,
